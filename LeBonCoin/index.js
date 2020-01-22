@@ -30,9 +30,11 @@ mongoose.connect("mongodb://localhost/LeBonCoin", {
 
 //Activation de l'utilisation des routes :
 const userRoutes = require("./routes/user");
+const offerRoutes = require("./routes/announce");
 
 //Importation des routes
 app.use(userRoutes);
+app.use(offerRoutes);
 
 //Gestion des routes erronées
 
